@@ -17,6 +17,16 @@
     };
   };
 
+  programs.ghostty = {
+    enable = true;
+    settings = {
+      background-opacity = 0.85;
+      theme = "Ayu";
+      font-family = "FiraCode Nerd Font";
+      font-size = 14;
+    };
+  };
+
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new Home Manager release introduces backwards
