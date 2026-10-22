@@ -6,6 +6,17 @@
   home.username = "jimg";
   home.homeDirectory = "/home/jimg";
 
+  programs.bash = {
+    enable = true;
+    bashrcExtra = ''
+      eval "$(starship init bash)   
+    '';
+    shellAliases = {
+      nixrs = "sudo nixos-rebuild switch --flake ~/.nixconfig";
+      nixrsu = "sudo nixos-rebuild switch --upgrade --flake ~/.nixconfig";
+    };
+  };
+
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new Home Manager release introduces backwards
