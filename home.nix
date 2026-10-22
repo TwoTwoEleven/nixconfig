@@ -9,7 +9,7 @@
   programs.bash = {
     enable = true;
     bashrcExtra = ''
-      eval "$(starship init bash)   
+      eval "$(starship init bash)"   
     '';
     shellAliases = {
       nixrs = "sudo nixos-rebuild switch --flake ~/.nixconfig";
