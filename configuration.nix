@@ -20,6 +20,10 @@
   programs.niri.enable = true;
   programs.bash.enable = true;
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.fira-code
+  ];
+  
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
   environment.systemPackages = with pkgs; [
@@ -39,7 +43,6 @@
     man-db
     starship
     stress
-    nerd-fonts.fira-code
     # xdg-utils
     discord
     vscodium
