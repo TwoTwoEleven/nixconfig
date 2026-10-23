@@ -35,10 +35,12 @@
     };
   };
 
+  # example to add a subtree from git root folder to subtree prefix folder
+  # git subtree add --prefix home-manager/yazi/ayu-dark.yazi https://github.com/kmlupreti/ayu-dark.yazi main --squash
   programs.yazi = {
     enable = true;
     flavors = {
-      ayu-dark = ../yazi/ayu-dark.yazi;
+      ayu-dark = ./yazi/ayu-dark.yazi;
     };
     theme = {
       flavor = {
