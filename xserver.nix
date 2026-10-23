@@ -4,7 +4,8 @@
   # X11 settings
   services.xserver = {
     enable = true;
-    xkb = { # keymap
+    xkb = {
+      # keymap
       layout = "us";
       variant = "";
     };

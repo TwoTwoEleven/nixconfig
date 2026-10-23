@@ -44,7 +44,10 @@
   users.users."jimg" = {
     isNormalUser = true;
     description = "jimg";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
   };
 
 }
