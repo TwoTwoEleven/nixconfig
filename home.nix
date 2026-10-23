@@ -33,6 +33,19 @@
     };
   };
 
+  programs.yazi = {
+    enable = true;
+    flavors = {
+      ayu-dark = ./yazi/ayu-dark.yazi;
+    };
+    theme = {
+      flavor = {
+        dark = "ayu-dark";
+        light = "ayu-dark";
+      };
+    };
+  };
+
   # niri
 
   # noctalia
@@ -43,23 +56,6 @@
 
   # vscodium
 
-  # yazi
-  programs.yazi = {
-    enable = true;
-    flavors = {
-      ayu-dark = ./yazi/ayu-dark.yazi;
-      #ayu-dark = "kmlupreti/ayu-dark";
-    };
-    theme = {
-      flavor = {
-        dark = "ayu-dark";
-        light = "ayu-dark";
-      };
-    };
-    #extraPackages = [
-    #  kmlupreti/ayu-dark
-    #];
-  };
 
   home.stateVersion = "26.05";
 }
