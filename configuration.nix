@@ -8,15 +8,12 @@
     ./sddm.nix
   ];
 
-  # Enable the modern Nix CLI and flakes.
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
 
-  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
   programs.niri.enable = true;
   programs.bash.enable = true;
 
@@ -24,8 +21,6 @@
     nerd-fonts.fira-code
   ];
   
-  # List packages installed in system profile.
-  # You can use https://search.nixos.org/ to find more packages (and options).
   environment.systemPackages = with pkgs; [
     fuzzel
     noctalia
@@ -48,10 +43,9 @@
     vscodium
     dysk
     wget
-    neovim
+    #neovim
     bitwarden-cli
     nh # nixos helper
-    #superfile
     yazi # disk navigator
     kew # music player
     lsd # ls with icons/colors
