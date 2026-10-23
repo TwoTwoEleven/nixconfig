@@ -7,6 +7,8 @@
 {
   imports = [
     ./starship.nix
+    ./niri.nix
+    ./noctalia.nix
   ];
 
   programs.home-manager.enable = true;
@@ -36,7 +38,7 @@
   programs.yazi = {
     enable = true;
     flavors = {
-      ayu-dark = ./yazi/ayu-dark.yazi;
+      ayu-dark = ../yazi/ayu-dark.yazi;
     };
     theme = {
       flavor = {
