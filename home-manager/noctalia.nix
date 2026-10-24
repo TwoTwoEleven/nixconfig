@@ -30,6 +30,7 @@
         widget_order = [
           "desktop-widget-0000000000000001"
           "desktop-widget-0000000000000002"
+          "desktop-widget-0000000000000003"
         ];
         grid = {
           cell_size = 16;
@@ -64,6 +65,20 @@
           settings = {
             background = false;
             font_family = "FiraCode Nerd Font";
+          };
+        };
+        widget.desktop-widget-0000000000000003 = {
+          box_height = 192.0;
+          box_width = 464.0;
+          cx = 1672.0;
+          cy = 156.0;
+          output = "DP-2";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "weather";
+          settings = {
+            background = false;
           };
         };
       };

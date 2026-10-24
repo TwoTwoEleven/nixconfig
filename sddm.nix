@@ -6,8 +6,6 @@ let
       embeddedTheme = "astronaut";
       themeConfig = {
         # https://github.com/Keyitdev/sddm-astronaut-theme/blob/master/Themes/astronaut.conf
-        # Customize colors and settings
-        # HeaderTextColor = "#d5c4a1";
         Background = "Backgrounds/nix-dark.png";
         FormPosition = "left";
         PartialBlur = "";
