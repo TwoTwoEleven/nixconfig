@@ -54,6 +54,10 @@
   };
 
   # git
+# git config --local user.email "gunkjunk@gmail.com"
+# git config --local user.name "TwoTwoEleven"
+# git config --global init.defaultBranch main
+# git config --list
 
   # fastfetch
 
