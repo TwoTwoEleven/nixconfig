@@ -7,7 +7,7 @@
 {
   imports = [
     ./starship.nix
-    ./niri.nix
+    ./niri/niri.nix
     ./noctalia.nix
   ];
 
