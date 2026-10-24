@@ -57,6 +57,8 @@
 
     nixd
     nixfmt
+
+    rustup
   ];
 
   # nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];

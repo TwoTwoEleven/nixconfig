@@ -9,6 +9,7 @@
     ./starship.nix
     ./niri/niri.nix
     ./noctalia.nix
+    ./vscodium.nix
   ];
 
   programs.home-manager.enable = true;
@@ -55,9 +56,6 @@
   # git
 
   # fastfetch
-
-  # vscodium
-
 
   home.stateVersion = "26.05";
 }
