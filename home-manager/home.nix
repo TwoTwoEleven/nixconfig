@@ -37,6 +37,8 @@
 
   # example to add a subtree from git root folder to subtree prefix folder
   # git subtree add --prefix home-manager/yazi/ayu-dark.yazi https://github.com/kmlupreti/ayu-dark.yazi main --squash
+  # to update subtree from git root folder
+  # git subtree pull --prefix home-manager/yazi/ayu-dark.yazi https://github.com/kmlupreti/ayu-dark.yazi main --squash
   programs.yazi = {
     enable = true;
     flavors = {
@@ -49,10 +51,6 @@
       };
     };
   };
-
-  # niri
-
-  # noctalia
 
   # git
 
