@@ -1,7 +1,7 @@
 { lib, ... }:
 
 {
-  # just reference the niri config in the repo
+  # reference the niri config in the repo
   xdg.configFile."niri/config.kdl".source = ./config.kdl;
 
   # use https://github.com/sodiboo/niri-flake or just save a config.kdl copy in the repo
