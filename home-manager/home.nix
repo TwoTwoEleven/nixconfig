@@ -65,7 +65,8 @@
 
   # fastfetch
 
-  # remmina
+  # remmina connection files
+  xdg.dataFile."remmina/nd_rdp_nd-dev-nogpu_192-168-1-121.remmina".source = ./remmina/nd_rdp_nd-dev-nogpu_192-168-1-121.remmina;
 
   home.stateVersion = "26.05";
 }
