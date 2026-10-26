@@ -33,8 +33,10 @@
       set -x EDITOR "micro"
     '';
     shellAliases = {
-      nixrs = "sudo nixos-rebuild switch --flake ~/.nixconfig";
-      nixrsu = "sudo nixos-rebuild switch --upgrade --flake ~/.nixconfig";
+      nixrs = "sudo nixos-rebuild switch --flake ~/.config/nixos";
+      nixrsu = "sudo nixos-rebuild switch --upgrade --flake ~/.config/nixos";
+      nixcode = "codium ~/.config/nixos";
+      nixgit = "gitui --directory ~/.config/nixos";
     };
   };
 
