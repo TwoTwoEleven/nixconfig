@@ -1,6 +1,8 @@
 { lib, ... }:
 
 {
+  xdg.dataFile."noctalia/wallpaper/nix-dark.png".source = ../images/nix-dark.png;
+
   programs.noctalia = {
     enable = true;
     settings = {
@@ -243,15 +245,15 @@
       };
 
       wallpaper = {
-        directory = "/home/jimg/Pictures/Wallpaper";
+        directory = "/home/jimg/.local/share/noctalia/wallpaper";
         fill_mode = "center";
-        default.path = "/home/jimg/Pictures/Wallpaper/nix-dark.png";
-        last.path = "/home/jimg/Pictures/Wallpaper/nix-dark.png";
+        default.path = "/home/jimg/.local/share/noctalia/wallpaper/nix-dark.png";
+        last.path = "/home/jimg/.local/share/noctalia/wallpaper/nix-dark.png";
         monitors = {
-          DP-2.path = "/home/jimg/Pictures/Wallpaper/nix-dark.png";
-          DP-4.path = "/home/jimg/Pictures/Wallpaper/nix-dark.png";
-          HDMI-A-1.path = "/home/jimg/Pictures/Wallpaper/nix-dark.png";
-          HDMI-A-2.path = "/home/jimg/Pictures/Wallpaper/nix-dark.png";
+          DP-2.path = "/home/jimg/.local/share/noctalia/wallpaper/nix-dark.png";
+          DP-4.path = "/home/jimg/.local/share/noctalia/wallpaper/nix-dark.png";
+          HDMI-A-1.path = "/home/jimg/.local/share/noctalia/wallpaper/nix-dark.png";
+          HDMI-A-2.path = "/home/jimg/.local/share/noctalia/wallpaper/nix-dark.png";
         };
       };
     };

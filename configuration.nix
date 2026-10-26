@@ -14,12 +14,14 @@
     "flakes"
   ];
 
+  nix.settings.use-xdg-base-directories = true;
+
   fonts.packages = with pkgs; [
     nerd-fonts.fira-code # Nerd Fonts: Programming ligatures, extension of Fira Mono font, enlarged operators
   ];
 
   programs.niri.enable = true; # Scrollable-tiling Wayland compositor
-  programs.bash.enable = true; # GNU Bourne-Again Shell, the de facto standard shell on Linux (for interactive use)
+  programs.fish.enable = true; # Smart and user-friendly command line shell
   programs.steam.enable = true;
   
   environment.systemPackages = with pkgs; [

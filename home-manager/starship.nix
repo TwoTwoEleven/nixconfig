@@ -3,7 +3,7 @@
 {
   programs.starship = {
     enable = true;
-    enableBashIntegration = true;
+    enableFishIntegration = true;
     settings = {
       "$schema" = "https://starship.rs/config-schema.json";
 

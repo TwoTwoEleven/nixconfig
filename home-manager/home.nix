@@ -18,12 +18,20 @@
     homeDirectory = "/home/jimg";
   };
 
-  programs.bash = {
+  xdg = {
     enable = true;
-    sessionVariables = {
-      DISPLAY = ":0";
-      EDITOR = "micro";
+    userDirs = {
+      enable = true;
+      createDirectories = true;
     };
+  };
+
+  programs.fish = {
+    enable = true;
+    interactiveShellInit = ''
+      set fish_greeting # Disable greeting
+      set -x EDITOR "micro"
+    '';
     shellAliases = {
       nixrs = "sudo nixos-rebuild switch --flake ~/.nixconfig";
       nixrsu = "sudo nixos-rebuild switch --upgrade --flake ~/.nixconfig";
@@ -32,7 +40,10 @@
 
   programs.ghostty = {
     enable = true;
+    enableFishIntegration = true;
     settings = {
+      command = "fish --login --interactive";
+      shell-integration = "fish";
       background-opacity = 0.85;
       theme = "Ayu";
       font-family = "FiraCode Nerd Font";
