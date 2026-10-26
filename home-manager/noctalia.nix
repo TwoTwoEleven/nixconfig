@@ -245,15 +245,15 @@
       };
 
       wallpaper = {
-        directory = "/home/jimg/.local/share/noctalia/wallpaper";
+        directory = "~/.local/share/noctalia/wallpaper";
         fill_mode = "center";
-        default.path = "/home/jimg/.local/share/noctalia/wallpaper/nix-dark.png";
-        last.path = "/home/jimg/.local/share/noctalia/wallpaper/nix-dark.png";
+        default.path = "~/.local/share/noctalia/wallpaper/nix-dark.png";
+        last.path = "~/.local/share/noctalia/wallpaper/nix-dark.png";
         monitors = {
-          DP-2.path = "/home/jimg/.local/share/noctalia/wallpaper/nix-dark.png";
-          DP-4.path = "/home/jimg/.local/share/noctalia/wallpaper/nix-dark.png";
-          HDMI-A-1.path = "/home/jimg/.local/share/noctalia/wallpaper/nix-dark.png";
-          HDMI-A-2.path = "/home/jimg/.local/share/noctalia/wallpaper/nix-dark.png";
+          DP-2.path = "~/.local/share/noctalia/wallpaper/nix-dark.png";
+          DP-4.path = "~/.local/share/noctalia/wallpaper/nix-dark.png";
+          HDMI-A-1.path = "~/.local/share/noctalia/wallpaper/nix-dark.png";
+          HDMI-A-2.path = "~/.local/share/noctalia/wallpaper/nix-dark.png";
         };
       };
     };
