@@ -57,16 +57,10 @@
     };
   };
 
-  # git
-  # git config --local user.email "gunkjunk@gmail.com"
-  # git config --local user.name "TwoTwoEleven"
-  # git config --global init.defaultBranch main
-  # git config --list
-
-  # fastfetch
-
   # remmina connection files
   xdg.dataFile."remmina/nd_rdp_nd-dev-nogpu_192-168-1-121.remmina".source = ./remmina/nd_rdp_nd-dev-nogpu_192-168-1-121.remmina;
+
+  # fastfetch
 
   home.stateVersion = "26.05";
 }
