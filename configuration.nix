@@ -20,7 +20,8 @@
 
   programs.niri.enable = true; # Scrollable-tiling Wayland compositor
   programs.bash.enable = true; # GNU Bourne-Again Shell, the de facto standard shell on Linux (for interactive use)
-
+  programs.steam.enable = true;
+  
   environment.systemPackages = with pkgs; [
     # System apps
     noctalia # Sleek, customizable desktop shell crafted for Wayland
@@ -48,6 +49,8 @@
     kew # Command-line music player for Linux
     lsd # Next gen ls command
     zoxide # Fast cd command that learns your habits
+    # steamcmd # Steam command-line tools
+    # steam-tui # Rust TUI client for steamcmd
 
     # GUI apps
     discord # All-in-one cross-platform voice and text chat for gamers
@@ -68,6 +71,9 @@
     rustup # Rust toolchain installer
     git # Distributed version control system
     gitui # Blazing fast terminal-ui for Git written in Rust
+
+    xwayland-satellite # Xwayland outside your Wayland compositor
+    xclock # analog / digital clock for X
   ];
 
   # nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];

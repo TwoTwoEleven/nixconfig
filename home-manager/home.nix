@@ -20,6 +20,10 @@
 
   programs.bash = {
     enable = true;
+    sessionVariables = {
+      DISPLAY = ":0";
+      EDITOR = "micro";
+    };
     shellAliases = {
       nixrs = "sudo nixos-rebuild switch --flake ~/.nixconfig";
       nixrsu = "sudo nixos-rebuild switch --upgrade --flake ~/.nixconfig";
@@ -54,12 +58,14 @@
   };
 
   # git
-# git config --local user.email "gunkjunk@gmail.com"
-# git config --local user.name "TwoTwoEleven"
-# git config --global init.defaultBranch main
-# git config --list
+  # git config --local user.email "gunkjunk@gmail.com"
+  # git config --local user.name "TwoTwoEleven"
+  # git config --global init.defaultBranch main
+  # git config --list
 
   # fastfetch
+
+  # remmina
 
   home.stateVersion = "26.05";
 }
