@@ -37,6 +37,7 @@
       nixrsu = "sudo nixos-rebuild switch --upgrade --flake ~/.config/nixos";
       nixcode = "codium ~/.config/nixos";
       nixgit = "gitui --directory ~/.config/nixos";
+      nixclean = "nh clean all --ask";
     };
   };
 
