@@ -24,7 +24,29 @@
   };
 
   # Enable CUPS to print documents.
-  services.printing.enable = true;
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
+  services.printing = {
+    enable = true;
+    drivers = with pkgs; [
+      cups-filters
+      cups-browsed
+    ];
+  };
+  hardware.printers = {
+    ensureDefaultPrinter = "Epson-ET-3850";
+    ensurePrinters = [
+      {
+        deviceUri = "ipp://192.168.1.8/ipp/print";
+        location = "home";
+        name = "Epson-ET-3850";
+        model = "everywhere";
+      }
+    ];
+  };
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
@@ -49,12 +71,5 @@
       "wheel"
     ];
   };
-
-  #xdg.portal = {
-  #enable = true;
-  #xdgOpenUsePortal = true;
-  #config.common.default = "*";
-  #extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-  #};
 
 }
