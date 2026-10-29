@@ -44,7 +44,7 @@
     # xdg-utils
     dysk # Get information on your mounted disks
     wget # Tool for retrieving files using HTTP, HTTPS, and FTP
-    #neovim
+    neovim # Vim text editor fork focused on extensibility and agility
     bitwarden-cli # Secure and free password manager for all of your devices
     nh # Yet another nix cli helper
     yazi # Blazing fast terminal file manager written in Rust, based on async I/O

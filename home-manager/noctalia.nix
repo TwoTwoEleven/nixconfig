@@ -244,6 +244,12 @@
         source = "community";
       };
 
+      backdrop = {
+        enabled = true;
+        blur_intensity = 0.5; # 0.0 = no blur, 1.0 = maximum blur
+        tint_intensity = 0.3; # 0.0 = no tint, 1.0 = fully opaque tint
+      };
+
       wallpaper = {
         directory = "~/.local/share/noctalia/wallpaper";
         fill_mode = "center";
