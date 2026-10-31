@@ -49,6 +49,15 @@
     nh # Yet another nix cli helper
     yazi # Blazing fast terminal file manager written in Rust, based on async I/O
     kew # Command-line music player for Linux
+    # avahi
+    mpd # Flexible, powerful daemon for playing music
+    mpc
+    rmpc # TUI music player client for MPD with album art support via kitty image protocol
+    cava # Console-based Audio Visualizer for Alsa
+
+    # pango # Library for laying out and rendering of text, with an emphasis on internationalization
+    # tauon # Linux desktop music player from the future
+
     lsd # Next gen ls command
     zoxide # Fast cd command that learns your habits
     # steamcmd # Steam command-line tools
@@ -61,6 +70,7 @@
     remmina # Remote desktop client written in GTK
     vivaldi # Browser for our Friends, powerful and personal
     vivaldi-ffmpeg-codecs # Additional support for proprietary codecs for Vivaldi and other chromium based tools
+    ytmdesktop # Desktop App for YouTube Music
     # kicad # Open Source Electronics Design Automation suite
     # orca-slicer # G-code generator for 3D printers (Bambu, Prusa, Voron, VzBot, RatRig, Creality, etc.)
 
