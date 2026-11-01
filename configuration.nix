@@ -23,7 +23,7 @@
   programs.niri.enable = true; # Scrollable-tiling Wayland compositor
   programs.fish.enable = true; # Smart and user-friendly command line shell
   programs.steam.enable = true;
-  
+
   environment.systemPackages = with pkgs; [
     # System apps
     noctalia # Sleek, customizable desktop shell crafted for Wayland
@@ -31,9 +31,16 @@
     ghostty # Fast, native, feature-rich terminal emulator pushing modern features
     starship # Minimal, blazing fast, and extremely customizable prompt for any shell
 
+    # Editors
+    micro # Modern and intuitive terminal-based text editor
+    #fresh-editor # Terminal-based text editor with LSP support and TypeScript plugins
+    neovim # Vim text editor fork focused on extensibility and agility
+    vscodium # Open source source code editor developed by Microsoft for Windows, Linux and macOS (VS Code without MS branding/telemetry/licensing)
+    nixd # Feature-rich Nix language server interoperating with C++ nix
+    nixfmt-rs # Rust reimplementation of nixfmt that produces byte-identical output to the Haskell original
+
     # CLI apps
     dust # du, but more intuitive
-    micro # Modern and intuitive terminal-based text editor
     btop # Monitor of resources
     fastfetch # Actively maintained, feature-rich and performance oriented, neofetch like system information tool
     bat # Cat(1) clone with syntax highlighting and Git integration
@@ -44,22 +51,18 @@
     # xdg-utils
     dysk # Get information on your mounted disks
     wget # Tool for retrieving files using HTTP, HTTPS, and FTP
-    neovim # Vim text editor fork focused on extensibility and agility
     bitwarden-cli # Secure and free password manager for all of your devices
     nh # Yet another nix cli helper
     yazi # Blazing fast terminal file manager written in Rust, based on async I/O
+    lsd # Next gen ls command
+    zoxide # Fast cd command that learns your habits
+
+    # Music apps
     kew # Command-line music player for Linux
-    # avahi
     mpd # Flexible, powerful daemon for playing music
-    mpc
     rmpc # TUI music player client for MPD with album art support via kitty image protocol
     cava # Console-based Audio Visualizer for Alsa
 
-    # pango # Library for laying out and rendering of text, with an emphasis on internationalization
-    # tauon # Linux desktop music player from the future
-
-    lsd # Next gen ls command
-    zoxide # Fast cd command that learns your habits
     # steamcmd # Steam command-line tools
     # steam-tui # Rust TUI client for steamcmd
 
@@ -74,15 +77,10 @@
     # kicad # Open Source Electronics Design Automation suite
     # orca-slicer # G-code generator for 3D printers (Bambu, Prusa, Voron, VzBot, RatRig, Creality, etc.)
 
-    # coding packages
-    vscodium # Open source source code editor developed by Microsoft for Windows, Linux and macOS (VS Code without MS branding/telemetry/licensing)
-    nixd # Feature-rich Nix language server interoperating with C++ nix
-    #nixfmt # Official formatter for Nix code
-    nixfmt-rs # Rust reimplementation of nixfmt that produces byte-identical output to the Haskell original
-
     rustup # Rust toolchain installer
     git # Distributed version control system
     gitui # Blazing fast terminal-ui for Git written in Rust
+    cmake # Cross-platform, open-source build system generator
 
     xwayland-satellite # Xwayland outside your Wayland compositor
     xclock # analog / digital clock for X

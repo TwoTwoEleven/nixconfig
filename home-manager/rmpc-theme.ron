@@ -34,14 +34,15 @@
         trace: (fg: "magenta", bg: "black"),
     ),
     cava: (
-        bar_width: 2,
+        bar_width: 1,
         bar_spacing: 1,
-        orientation: Bottom,
+        orientation: Horizontal,
         bar_color: Gradient({
-              0: "#00FF00",
-             33: "#FFFF00",
-             67: "#FF8000",
-            100: "#FF0000",
+              0: "#aad94c",
+             40: "#e6c08a",
+             60: "#ff8f40",
+             80: "#f07178",
+            100: "#f07178",
         }),
     ),
     progress_bar: (
