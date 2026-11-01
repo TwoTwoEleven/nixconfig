@@ -58,10 +58,14 @@
     zoxide # Fast cd command that learns your habits
 
     # Music apps
+    ytmdesktop # Desktop App for YouTube Music
     kew # Command-line music player for Linux
     mpd # Flexible, powerful daemon for playing music
     rmpc # TUI music player client for MPD with album art support via kitty image protocol
     cava # Console-based Audio Visualizer for Alsa
+    yt-dlp # Feature-rich command-line audio/video downloader
+    ffmpeg # Complete, cross-platform solution to record, convert and stream audio and video
+    python314Packages.secretstorage
 
     # steamcmd # Steam command-line tools
     # steam-tui # Rust TUI client for steamcmd
@@ -73,7 +77,6 @@
     remmina # Remote desktop client written in GTK
     vivaldi # Browser for our Friends, powerful and personal
     vivaldi-ffmpeg-codecs # Additional support for proprietary codecs for Vivaldi and other chromium based tools
-    ytmdesktop # Desktop App for YouTube Music
     # kicad # Open Source Electronics Design Automation suite
     # orca-slicer # G-code generator for 3D printers (Bambu, Prusa, Voron, VzBot, RatRig, Creality, etc.)
 
@@ -81,6 +84,7 @@
     git # Distributed version control system
     gitui # Blazing fast terminal-ui for Git written in Rust
     cmake # Cross-platform, open-source build system generator
+    python3 # High-level dynamically-typed programming language
 
     xwayland-satellite # Xwayland outside your Wayland compositor
     xclock # analog / digital clock for X

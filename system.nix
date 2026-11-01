@@ -60,24 +60,13 @@
     # jack.enable = true;
   };
 
-  # services.mpd = {
-  #   enable = true;
-  #   musicDirectory = "~/Music";
-  #   extraConfig = ''
-  #     audio_output {
-  #       type "pipewire"
-  #       name "My PipeWire Output"
-  #     }
-  #   '';
-  #   user = "jimg";
-  #   network.listenAddress = "any";
-  #   startWhenNeeded = true; # systemd feature: only start MPD service upon connection to its socket
-  # };
   services.mpd = {
     enable = true;
     user = "jimg";
     startWhenNeeded = true;
     settings = {
+      #bind_to_address = "127.0.0.1";
+      bind_to_address = "/tmp/mpd_socket";
       music_directory = /home/jimg/.backups/Music;
       audio_output = [
         {

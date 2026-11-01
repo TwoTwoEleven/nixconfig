@@ -10,10 +10,10 @@
       #![enable(unwrap_newtypes)]
       #![enable(unwrap_variant_newtypes)]
       (
-          address: "127.0.0.1:6600",
+          address: "/tmp/mpd_socket",
+          cache_dir: "/tmp/rmpc/cache",
           password: None,
           theme: "rmpc-theme",
-          cache_dir: None,
           on_song_change: None,
           volume_step: 5,
           max_fps: 30,
