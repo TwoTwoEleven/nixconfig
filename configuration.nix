@@ -22,7 +22,7 @@
 
   programs.niri.enable = true; # Scrollable-tiling Wayland compositor
   programs.fish.enable = true; # Smart and user-friendly command line shell
-  programs.steam.enable = true;
+  programs.steam.enable = true; # Digital distribution platform
 
   environment.systemPackages = with pkgs; [
     # System apps
@@ -65,7 +65,8 @@
     cava # Console-based Audio Visualizer for Alsa
     yt-dlp # Feature-rich command-line audio/video downloader
     ffmpeg # Complete, cross-platform solution to record, convert and stream audio and video
-    python314Packages.secretstorage
+    python314Packages.secretstorage # needed for yt-dlp
+    cliamp
 
     # steamcmd # Steam command-line tools
     # steam-tui # Rust TUI client for steamcmd
@@ -85,6 +86,8 @@
     gitui # Blazing fast terminal-ui for Git written in Rust
     cmake # Cross-platform, open-source build system generator
     python3 # High-level dynamically-typed programming language
+    clang
+    gcc
 
     xwayland-satellite # Xwayland outside your Wayland compositor
     xclock # analog / digital clock for X

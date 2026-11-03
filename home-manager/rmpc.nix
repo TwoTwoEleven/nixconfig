@@ -11,7 +11,7 @@
       #![enable(unwrap_variant_newtypes)]
       (
           address: "/tmp/mpd_socket",
-          cache_dir: "/tmp/rmpc/cache",
+          cache_dir: "/tmp/rmpc/cache/youtube",
           password: None,
           theme: "rmpc-theme",
           on_song_change: None,

@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }:
 
@@ -27,6 +28,8 @@
       createDirectories = true;
     };
   };
+
+  home.packages = [ inputs.strata.packages.${pkgs.stdenv.hostPlatform.system}.default ];
 
   programs.ghostty = {
     enable = true;
