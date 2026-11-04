@@ -6,17 +6,18 @@ let
       embeddedTheme = "astronaut";
       themeConfig = {
         # https://github.com/Keyitdev/sddm-astronaut-theme/blob/master/Themes/astronaut.conf
-        Background = "Backgrounds/nix-dark.png";
+        Background = "Backgrounds/NixSnowy.jpg";
         FormPosition = "left";
-        PartialBlur = "";
+        PartialBlur = "false";
+        FullBlur = "false";
       };
     }).overrideAttrs
       (oldAttrs: {
         # Optional: Inject custom background image
         installPhase = oldAttrs.installPhase + ''
           chmod u+w $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
-          cp ${./images/nix-dark.png} \
-            $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/nix-dark.png
+          cp ${./images/NixSnowy.jpg} \
+            $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/NixSnowy.jpg
         '';
       });
 in
